@@ -1,4 +1,4 @@
-.hero-top {
+.hero {
     text-align: center;
     background: #2F303A;
     padding-top: 200px;
@@ -9,7 +9,11 @@
     background-size: cover;
 }
 
-.hero-title {
+.hero-container {
+    display: flex;
+}
+
+.hero__title {
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;

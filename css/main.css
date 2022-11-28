@@ -214,11 +214,11 @@ body {
   pointer-events: none;
 }
 
-.header-nav {
+.navigation {
   display: flex;
 }
 
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -228,7 +228,7 @@ body {
   border: 1px solid #ECECEC;
 }
 
-.site-logo {
+.logo__navigation {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -247,15 +247,15 @@ body {
   color: #2196F3;
 }
 
-.site-nav {
+.menu {
   display: flex;
   margin-left: 93px;
 }
-.site-nav .link:hover, .site-nav .link:focus {
+.menu .link:hover, .menu .link:focus {
   color: #2196F3;
 }
 
-.auth-nav {
+.header__connect {
   display: flex;
   text-decoration: none;
   font-family: "Roboto";
@@ -270,10 +270,10 @@ body {
   fill: #757575;
 }
 
-.site-nav .link:not(:last-child) {
+.menu .link:not(:last-child) {
   margin-right: 50;
 }
-.site-nav .link {
+.menu .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -286,7 +286,7 @@ body {
   color: #212121;
 }
 
-.link-mar {
+.menu__mar {
   margin-right: 50px;
   position: relative;
 }
@@ -310,7 +310,7 @@ body {
   margin-right: 10px;
 }
 
-.contact-header {
+.connect__contact {
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 500;
@@ -321,12 +321,12 @@ body {
   transition: color 250ms linear;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.auth-nav .contact-header:hover, .auth-nav .contact-header:focus {
+.connect .connect__contact:hover, .connect .connect__contact:focus {
   color: #2196F3;
   fill: #2196F3;
 }
 
-.hero-top {
+.hero {
   text-align: center;
   background: #2F303A;
   padding-top: 200px;
@@ -337,7 +337,11 @@ body {
   background-size: cover;
 }
 
-.hero-title {
+.hero-container {
+  display: flex;
+}
+
+.hero__title {
   font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;

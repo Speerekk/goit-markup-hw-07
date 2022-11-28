@@ -1,10 +1,10 @@
 
 
-.header-nav {
+.navigation {
     display: flex;
 }
 
-.main-nav {
+.header__container {
     display: flex;
     align-items: center;
 }
@@ -14,7 +14,7 @@
     border: 1px solid #ECECEC;
 }
 
-.site-logo {
+.logo__navigation {
     display: block;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -33,7 +33,7 @@
     color: #2196F3;
 }
 
-.site-nav {
+.menu {
     display: flex;
     margin-left: 93px;
 
@@ -43,7 +43,7 @@
 }
 }
 
-.auth-nav {
+.header__connect {
     display: flex;
     text-decoration: none;
     font-family: 'Roboto';
@@ -61,11 +61,11 @@
 }
 
 .link {
-    .site-nav &:not(:last-child) {
+    .menu &:not(:last-child) {
         margin-right: 50;
     }
 
-    .site-nav &{
+    .menu &{
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -79,7 +79,7 @@
     }
 }
 
-.link-mar {
+.menu__mar {
     margin-right: 50px;
     position: relative;
 }
@@ -105,7 +105,7 @@
     margin-right: 10px;
 }
 
-.contact-header {
+.connect__contact {
     text-decoration: none;
     font-family: 'Roboto';
     font-weight: 500;
@@ -116,8 +116,8 @@
     transition: color 250ms linear;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .auth-nav &:hover,
-    .auth-nav &:focus {
+    .connect &:hover,
+    .connect &:focus {
     color: #2196F3;
     fill: #2196F3;
 }
