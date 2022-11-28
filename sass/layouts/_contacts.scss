@@ -25,12 +25,13 @@
     justify-content: center;
     fill: #AFB1B8;
     transition: background-color 250ms linear, fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.clients-link:hover,
-.clients-link:focus {
+    &:hover,
+    &:focus {
     border: 1px solid #2196F3;
     background-color: #ffffff;
     fill: #2196F3;
+    }
 }
+

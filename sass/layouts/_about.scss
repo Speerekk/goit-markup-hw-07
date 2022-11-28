@@ -42,10 +42,9 @@
 
 .item {
     margin-right: 30px;
-}
-
-.feature-list .item:last-child {
-    margin-right: 0;
+    .feature-list &:last-child {
+        margin-right: 0;
+    }
 }
 
 .images {
@@ -179,17 +178,15 @@
     justify-content: center;
     fill: #AFB1B8;
     transition: background-color 250ms linear, fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.soc-icons-link:hover, 
-.soc-icons-link:focus {
+    &:hover, 
+    &:focus {
     color: #2196F3;
     background-color: #2196F3;
     fill: #FFFFFF;
+    }
 }
-
-
 
 /* Чим ми займаємося */
 

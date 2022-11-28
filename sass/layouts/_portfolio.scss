@@ -14,16 +14,15 @@
     gap: 8px;
 }
 
-
 .bg-portfolio {
     background: #FFFFFF;
     transition: box-shadow 250ms linear;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-}
-.bg-portfolio:hover,
-.bg-portfolio:focus {
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 }
 
 .top-portfolio-wrap {
@@ -54,12 +53,12 @@
     transition: transform 250ms linear;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
-}
 
-.bg-portfolio:hover .top-portfolio-text,
-.bg-portfolio:focus .top-portfolio-text {
+    .bg-portfolio:hover &,
+    .bg-portfolio:focus & {
     transform: translateY(0);
 
+}
 }
 
 .types-portfolio {
@@ -71,10 +70,6 @@
     gap: 30px;
     width: 1170px;
 }
-
-
-
-
 
 .project {
     font-family: 'Roboto';

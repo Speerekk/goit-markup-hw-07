@@ -84,15 +84,17 @@
     fill: #ffffff;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms linear, fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.footer-icons-link:hover, 
-.footer-icons-link:focus {
+    &:hover, 
+    &:focus {
     color: #2196F3;
     background-color: #2196F3;
     fill: #FFFFFF;
+    }
 }
+
+
 
 .form-footer {
     margin-left: 93px;

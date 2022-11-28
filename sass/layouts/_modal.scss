@@ -48,18 +48,17 @@
     outline: transparent;
 
     transition: border 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal-input:hover,
-.modal-input:focus {
+    &:hover,
+    &:focus {
     border: 1px solid #2196F3;
 }
-
-.modal-input:hover + .modal-input-icon,
-.modal-input:focus + .modal-input-icon {
-    fill: #2196F3;
 }
+
+
+
+
 
 .modal-input-icon {
     position: absolute;
@@ -68,7 +67,12 @@
     transform: translateY(-50%);
 
     transition: fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-input:hover + &,
+    .modal-input:focus + & {
+    fill: #2196F3;
+}   
 }
 .modal-comment-text {
     width: 100%;
@@ -89,54 +93,54 @@
     letter-spacing: 0.01em;
 
     color: rgba(117, 117, 117, 0.5);
+
+    &:hover,
+    &:focus {
+    border: 1px solid #2196F3;
+}
 }
 
-.modal-comment-text:hover,
-.modal-comment-text:focus {
-    border: 1px solid #2196F3;
-    
-}
+
 
 .modal-input-check {
 
-}
-
-.modal-input-check:checked + .modal-check-text span {
-    background-color: #2196F3;
-    border-color: transparent;
-    fill: #FFFFFF;
-}
-
-.modal-input-check:focus + .modal-check-text span {
-    border-color: #2196F3;
 }
 
 .modal-check-text {
     display: flex;
     text-align: center;
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.17;
-/* identical to box height, or 171% */
-letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
 
-color: #757575;
+    color: #757575;
     margin-top: 20px;
-}
 
-.modal-check-text span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: transparent;
+    & span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: transparent;
+    
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        border-radius: 3px;
+        margin-right: 8px;
+    }
 
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
-    border-radius: 3px;
-    margin-right: 8px;
+    .modal-input-check:focus + & span {
+        border-color: #2196F3;
+    }
+    .modal-input-check:checked + & span {
+        background-color: #2196F3;
+        border-color: transparent;
+        fill: #FFFFFF;
+    }
 }
 
 .check-margin {
@@ -164,12 +168,12 @@ color: #757575;
     cursor: pointer;
 
     transition: fill 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-}
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal-close:hover,
-.modal-close:focus {
+    &:hover,
+    &:focus {
     fill: #2196F3;
+}
 }
 
 .is-hidden {
